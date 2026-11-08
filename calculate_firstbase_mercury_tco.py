@@ -86,7 +86,7 @@ def main():
                 row["reason"] = "Benchmark product not confirmed for this entity/state; excluded from savings."
             records.append(row)
     report = {"scenario": DEFAULTS["scenario"], "currency": "USD", "years": args.years,
-              "tier": args.tier, "doola_plan": args.doola_plan, "assumptions": vars(args),
+              "tier": args.tier, "doola_plan": args.doola_plan, "benchmarks": vars(args),
               "price_status": "Historical planning benchmarks; not live verified quotes.",
               "tax_scope": "Preparation only; income tax, withholding, penalties and owner returns excluded.",
               "records": records, "gateway": GATEWAY}
